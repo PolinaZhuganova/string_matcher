@@ -1,29 +1,81 @@
-# README #
+Необходимо написать консольное приложение на Java(главный класс называть Main), в которое читает из файла input.txt входные данные:
 
-This README would normally document whatever steps are necessary to get your application up and running.
+n - число
 
-### What is this repository for? ###
+далее n строк
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+m - число
 
-### How do I get set up? ###
+далее m строк
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Пример 1:
 
-### Contribution guidelines ###
+input.txt:
 
-* Writing tests
-* Code review
-* Other guidelines
+4
 
-### Who do I talk to? ###
+гвоздь
 
-* Repo owner or admin
-* Other community or team contact
+шуруп
+
+краска синяя
+
+ведро для воды
+
+3
+
+краска
+
+корыто для воды
+
+шуруп 3х1.5
+
+ 
+
+ouput.txt:
+
+гвоздь:?
+
+шуруп:шуруп 3х1.5
+
+краска синяя:краска
+
+ведро для воды:корыто для воды
+
+ 
+
+Пример 2:
+
+1
+
+Бетон с присадкой
+
+1
+
+Цемент
+
+ouput.txt:
+
+Бетон с присадкой:Цемент
+
+ 
+
+Пример 3:
+
+1
+
+Бетон с присадкой
+
+2
+
+присадка бля бетона
+
+доставка
+
+ouput.txt:
+
+Бетон с присадкой:присадка бля бетона
+
+доставка:?
+
+Программа должна сопоставить максимально похожие строки из первого множества со строками из второго множества (одна к одной) и вывести результат в файл output.txt.
